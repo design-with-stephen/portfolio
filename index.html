@@ -473,12 +473,15 @@
     <script src="scripts/projects.js"></script>
     <script src="scripts/sheet.js"></script>
     <script>
-      const loader = document.querySelector(`.loader`);
-      const pageContent = document.querySelector(`#body`);
-      window.addEventListener("load", () => {
-        loader.classList.add("hiddenloader");
-        pageContent.classList.add("showloader");
-      });
+      const loader = document.querySelector('.loader');
+      const pageContent = document.querySelector('#body');
+
+        window.addEventListener("load", () => {
+        setTimeout(() => {
+            loader.classList.add("hiddenloader");
+            pageContent.classList.add("showloader");
+        }, 5000); // 5000 milliseconds = 5 seconds
+        });
 
       const date = new Date();
       const year = date.getFullYear();
