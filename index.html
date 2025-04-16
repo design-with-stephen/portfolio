@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Lomoro Stephen Robert Frontend developer, graphics designer , ui & ux designer" />
+    <meta
+      name="keywords"
+      content="Portfolio, frontend web developer, graphics designer, ui & ux designer " />
+    <meta name="author" content="Lomoro Stephen Robert" />
+    <title>Portfolio</title>
+    <link rel="icon" href="assets/logo.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css"
+      integrity="sha512-d0olNN35C6VLiulAobxYHZiXJmq+vl+BGIgAxQtD5+kqudro/xNMvv2yIHAciGHpExsIbKX3iLg+0B6d0k4+ZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/components/header.css" />
+    <link rel="stylesheet" href="styles/components/mobilenav.css" />
+    <link rel="stylesheet" href="styles/components/hero.css" />
+    <link rel="stylesheet" href="styles/components/about.css" />
+    <link rel="stylesheet" href="styles/components/skills.css" />
+    <link rel="stylesheet" href="styles/components/works.css" />
+    <link rel="stylesheet" href="styles/components/projects_done.css" />
+    <link rel="stylesheet" href="styles/components/contact.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
+    <link rel="stylesheet" href="styles/animation.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VPB66VERNY"></script>
+  </head>
+  <body id="body">
+    <!---<div class="customCursor"></div>--->
+    <!-- Loader -->
+    <div class="loader">
+      <svg viewBox="0 0 400 160">
+        <text
+          x="50%"
+          y="50%"
+          dy="0.32em"
+          text-anchor="middle"
+          class="text-body">
+          Stephix
+        </text>
+        <text
+          x="50%"
+          y="50%"
+          dy="0.32em"
+          dx="2em"
+          text-anchor="middle"
+          class="text-body">
+          .
+        </text>
+      </svg>
+    </div>
+    <header class="header container">
+      <nav class="navBar">
+        <div class="logo-wrap"><span>Stephen.</span></div>
+        <div class="nav-bar-wrap">
+          <ul class="header__menu">
+            <li><a class="header__link" href="#hero">Home</a></li>
+            <li><a class="header__link" href="#about">About</a></li>
+            <li><a class="header__link" href="#skills">Skills</a></li>
+            <li><a class="header__link" href="#services">Services</a></li>
+            <li><a class="header__link" href="#contact">contact</a></li>
+            <li class="header__line"></li>
+            <li class="bulb">
+              <i id="theme-toggle" class="fa-regular fa-lightbulb"></i>
+            </li>
+            <li>
+              <a class="header__resume btn" href="resume/Lomoro Stephen Robert-CV.pdf">Resume<i class="fa-solid fa-download"></i></a>
+            </li>
+          </ul>
+          <button class="header__bars">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!---------------- start mobile nav-->
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav__menu">
+          <li><a href="#hero" class="mobile-nav__link">Home</a></li>
+          <li><a href="#about" class="mobile-nav__link">About</a></li>
+          <li><a href="#skills" class="mobile-nav__link">Skills</a></li>
+          <li><a href="#services" class="mobile-nav__link">Services</a></li>
+          <li><a href="#contact" class="mobile-nav__link">Contact</a></li>
+          <li>
+            <a class="Mobile_nav--btn mobile-nav__link"
+              ><i id="theme-toggle" class="fa-regular fa-lightbulb"></i
+            ></a>
+          </li>
+          <li>
+            <a class="mobile-nav__resume btn" href="resume/Lomoro Stephen Robert-CV.pdf"
+              >Resume<i class="fa-solid fa-download"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!----------------end mobile nav-->
+    <main>
+      <section id="hero" class="hero container">
+        <img
+          class="hero__img HiddenToBottom delay1"
+          src="assets/DSC_0144.JPG"
+          alt="" />
+        <div class="text-container">
+          <h2
+            id="typed-text"
+            class="hero__subtitle subtitle1 hiddenContentFromTop delay3">
+            Hi <span>&#128075;</span>,Am
+          </h2>
+          <h3
+            id="typed-text"
+            class="hero__subtitle hiddenContentFromTop delay4">
+            Lomoro Stephen
+          </h3>
+        </div>
+        <div class="typing__text-wrap hiddenContentFromTop delay5">
+          <h1 id="typewriter" class="hero__title"></h1>
+        </div>
+        <div class="text-container hiddenContentFromTop delay5">
+          <p class="hero__description">
+            A passionate <strong>Front-End , Graphics Designer</strong> and a
+            <strong>UI/UX</strong> enthusiast specialized in building
+            pixel-perfect interactive websites/ applications
+          </p>
+        </div>
+        <div class="hiddenContentFromTop">
+          <a class="header__resume btn" id="resumeMobile" href="resume/Lomoro Stephen Robert-CV.pdf">Resume<i class="fa-solid fa-download"></i></a>
+          <a class="hero__btn btn" href="#hireForm">Hire me</a>
+        </div>
+      </section>
+      <section id="about" class="about container section">
+        <div class="about__content__container overflowHidden">
+          <div class="about__content">
+            <h2 class="about__title hiddenLeft">About me</h2>
+            <p class="about__description hiddenLeft">
+              I'm a passionate Front-End Web Developer, Graphic Designer and a
+              UI/UX Designer with a relentless drive for innovation and a love
+              for turning ideas into immersive experiences. Join me as we
+              explore the intersection of creativity and technology.
+            </p>
+            <p class="about__description hiddenLeft">
+              I believe that every project is an opportunity for storytelling.
+              By combining technical expertise with a touch of artistry, I bring
+              ideas to life, creating memorable experiences that resonate with
+              audiences. Quality is not just a goal; it's the foundation of my
+              work.
+            </p>
+          </div>
+          <div class="about__img_wrapper hiddenImage">
+            <img
+              class="about__image lazy loading"
+              src="https://fakeimg.pl/2000"
+              data-src="assets/images/img1.jpg"
+              alt="profile-section profile" />
+          </div>
+        </div>
+      </section>
+      <section id="skills" class="skills container section">
+        <div class="skills__content-wrap">
+          <div class="content">
+            <div class="div hiddenRight">
+              <h3 class="skills__subtitle">Skill Sets</h3>
+            </div>
+            <div class="skills__ul__wrap">
+              <div class="skill-sets overflowHidden">
+                <div class="border-right">
+                  <p class="sub-title-p hiddenLeft">programming Technologies</p>
+                  <ul class="skills__ul hiddenRight delay1">
+                    <li class="skills__list">
+                      <img
+                        src="assets/skills-icons/icons8-html-48.png"
+                        alt="" />
+                    </li>
+                    <li class="skills__list">
+                      <img src="assets/skills-icons/icons8-css-48.png" alt="" />
+                    </li>
+                    <li class="skills__list">
+                      <img
+                        src="assets/skills-icons/icons8-javascript-48.png"
+                        alt="" />
+                    </li>
+                    <li class="skills__list php">
+                      <img src="assets/skills-icons/icons8-php-24.png" alt="" />
+                    </li>
+                    <li class="skills__list">
+                      <img
+                        src="assets/skills-icons/icons8-mysql-48.png"
+                        alt="" />
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <p class="sub-title-p hiddenLeft">Design Technologies</p>
+                  <ul class="skills__ul hiddenRight">
+                    <li class="skills__list">
+                      <img
+                        src="assets/skills-icons/icons8-illustrator-48.png"
+                        alt="" />
+                    </li>
+                    <li class="skills__list">
+                      <img
+                        src="assets/skills-icons/icons8-photoshop-48 (1).png"
+                        alt="" />
+                    </li>
+                    <li class="skills__list">
+                      <img
+                        src="assets/skills-icons/icons8-figma-48.png"
+                        alt="" />
+                    </li>
+                    <li class="skills__list">
+                      <img
+                        src="assets/skills-icons/icons8-adobe-xd-48.png"
+                        alt="" />
+                    </li>
+                    <li class="skills__list">
+                      <img
+                        src="assets/skills-icons/icons8-adobe-indesign.gif"
+                        alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="skills_info overflowHidden">
+                <p class="hiddenLeft">
+                  Proficient in website development and design, adept at
+                  utilizing HTML, CSS, JavaScript, bootstrap qnd jQuery to
+                  create visually appealing and user-friendly websites. Skilled
+                  in graphic design using Adobe Photoshop, Illustrator, and
+                  InDesign to produce captivating visuals such as logos and
+                  banners. Experienced in crafting engaging and SEO-optimized
+                  content for websites and blogs, employing research and
+                  narrative skills to drive traffic and conversions.
+                </p>
+              </div>
+              <div class="education">
+                <div class="educationTitle">
+                  <h3 class="skills__subtitle">Educational Background</h3>
+                </div>
+
+                <div class="skills_info">
+                  <p>Uganda Martyrs University</p>
+                  <p>Coursera</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="div image hiddenBtnToBottom">
+            <img
+              class="skills__image lazy loading"
+              src="https://fakeimg.pl/2000"
+              data-src="assets/images/img5.jpg"
+              alt="skills picture" />
+          </div>
+        </div>
+      </section>
+      <section id="services" class="work container section">
+        <div class="work-info">
+          <div class="work__header__container">
+            <h2 class="work__title text__center HiddenToBottom delay1">
+              What i Do?
+            </h2>
+            <p class="works__intro HiddenToBottom delay2">
+              I pride myself on delivering top-notch solutions that exceed
+              client expectations. With a passion for innovation and creativity,
+              i offer a comprehensive suite of services tailored to meet your
+              digital needs
+            </p>
+          </div>
+          <div class="service-wrap cards">
+            <div class="service-card card HiddenToBottom delay3">
+              <div class="imageDiv">
+                <i class="fa-solid fa-pen-nib fa-2x"></i>
+              </div>
+              <h5 class="card__title">Graphics Design</h5>
+            </div>
+            <div class="service-card card HiddenToBottom delay2">
+              <div class="imageDiv">
+                <i class="fa-solid fa-laptop-code fa-2x"></i>
+              </div>
+              <h5 class="card__title">Website Design</h5>
+            </div>
+            <div class="service-card card HiddenToBottom delay1">
+              <div class="imageDiv">
+                <i class="fa-solid fa-display fa-2x"></i>
+              </div>
+              <h5 class="card__title">Ui & Ux Design</h5>
+            </div>
+            <div class="service-card card HiddenToBottom delay2">
+                <div class="imageDiv">
+                    <!-- settings icon-->
+                     <i class="fa-solid fa-gear fa-2x"></i>
+                </div>
+                <h5 class="card__title">software installation and Configuration</h5>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="projects-container">
+          <div class="project-wrap">
+            <div class="tab-list">
+              <li class="tab isactive" onclick="showCategory('graphic')">
+                Graphic Design
+              </li>
+              <li class="tab" onclick="showCategory('websites')">
+                Web Development
+              </li>
+            </div>
+          </div>
+          <!-- Image Preview Modal -->
+          <div id="imageModal" class="image-modal">
+            <span class="close-modal">&times;</span>
+            <img class="modal-content" id="modalImage" />
+          </div>
+          <div class="project-content">
+            <div class="project-category graphic active">
+              <div class="image_box overflowHidden">
+                <div class="card HiddenToBottom delay3">
+                  <div class="project-image-wrap">
+                    <img src="assets/projects/chicken-poster.png" alt="" />
+                  </div>
+                </div>
+                <div class="card HiddenToBottom delay2">
+                  <div class="project-image-wrap">
+                    <img src="assets/projects/headphones poster.png" alt="" />
+                  </div>
+                </div>
+                <div class="card HiddenToBottom delay1">
+                  <div class="project-image-wrap">
+                    <img src="assets/projects/Man city Day 32.png" alt="" />
+                  </div>
+                </div>
+                <div class="card HiddenToBottom delay3">
+                  <div class="project-image-wrap">
+                    <img src="assets/projects/EASTER POSTER.png" alt="" />
+                  </div>
+                </div>
+                <div class="card HiddenToBottom delay2">
+                  <div class="project-image-wrap">
+                    <img src="assets/projects/ARSENAL POSTER.png" alt="" />
+                  </div>
+                </div>
+                <div class="card HiddenToBottom delay1">
+                  <div class="project-image-wrap">
+                    <img src="assets/projects/burger-poster.png" alt="" />
+                  </div>
+                </div>
+                <div class="card HiddenToBottom delay2">
+                  <div class="project-image-wrap">
+                    <img src="assets/projects/myst final.png" alt="" />
+                  </div>
+                </div>
+                <div class="card HiddenToBottom delay1">
+                  <div class="project-image-wrap">
+                    <img src="assets/projects/nivea-FINAL.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="btnBox">
+                <a href="#" class="seeMoreBtn btn"> see more </a>
+                <a
+                  href="#"
+                  class="seeLessBtn btn"
+                  id="loadLess"
+                  style="display: none"
+                  >See Less</a
+                >
+              </div>
+            </div>
+
+            <div class="project-category websites">
+              <p>Oooops No Content added!</p>
+              <div class="btn-wrap">
+                <a href="#" class="btn seeMoreBtn"> see more </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact us section start -->
+
+      <section id="contact" class="contact container section">
+        <div class="contact_wrap overflowHidden">
+          <div class="contact_info">
+            <div class="contact_info-wrap">
+              <h2 class="contact__title hiddenLeft delay4">Contact Me</h2>
+              <p class="contact__description hiddenLeft delay5">
+                I'd Love to Hear From You! Thank you for considering reaching
+                out to me. Whether you have a question, feedback, or just want
+                to say hello, I value your communication. Here are the ways you
+                can get in touch with me:
+              </p>
+            </div>
+            <div class="contact_info-wrap">
+              <h4 class="contact__subtitle hiddenLeft delay6">Social Media:</h4>
+              <p class="contact__description HiddenToBottom">
+                Connect with me on social media! Follow me on Facebook, Twitter,
+                Tiktok and Instagram for the latest updates and
+                behind-the-scenes glimpses.
+              </p>
+              <div class="contact__social HiddenToBottom">
+                <a href="https://www.instagram.com/stephen__designs">
+                  <i class="fa-brands fa-square-instagram social"></i>
+                </a>
+                <a href="https://www.tiktok.com/@stephix_">
+                  <i class="fa-brands fa-tiktok social"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="contact_form HiddenToBottom">
+            <h2 class="contact__subtitle contact__form-title">Contact Form</h2>
+            <form method="post" action="" id="hireForm" name="form">
+              <div class="input__fields">
+                <label class="contact__label" for="Name">Name</label>
+                <input type="text" class="contact__info_input" name="name" placeholder="Please enter your full name" required />
+              </div>
+              <div class="input__fields">
+                <label class="contact__label" for="email">Eamil</label>
+                <input type="email" class="contact__info_input" name="email" placeholder="Please your email" required />
+              </div>
+              <div class="input__fields">
+                <label class="contact__label" for="phone">Phone</label>
+                <input type="tel" class="contact__info_input" name="phone" placeholder="Please your phone number" required />
+              </div>
+              <div class="input__fields">
+                <label class="contact__label" for="Message"> Message</label>
+                <textarea class="msg_input" name="message" id="" cols="30" rows="10" placeholder="type here..." required>
+                </textarea>
+              </div>
+              <div class="btn_wrap" id="btn_wrap">
+                <button type="submit" value="Submit" id="submit" class="btn contact_btn">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- contact us section end -->
+    </main>
+
+    <!-- footer start-->
+    <footer class="">
+      <div class="footer__content-wrap">
+        <h5 class="footer__info">
+          <span class="year"></span> .... <span>All rights Reserved</span>
+        </h5>
+        <h5 class="footer__info">Designed By Lomoro Stephen</h5>
+      </div>
+    </footer>
+    <!-- footer end-->
+
+    <!-- scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/mobile_js.js"></script>
+    <script src="scripts/about.js"></script>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/sheet.js"></script>
+    <script>
+      const loader = document.querySelector(`.loader`);
+      const pageContent = document.querySelector(`#body`);
+      window.addEventListener("load", () => {
+        loader.classList.add("hiddenloader");
+        pageContent.classList.add("showloader");
+      });
+
+      const date = new Date();
+      const year = date.getFullYear();
+      const yearContainer = document.querySelector(".year");
+      yearContainer.innerHTML = `Portfolio &copy; ${year}`;
+    </script>
+  </body>
+</html>

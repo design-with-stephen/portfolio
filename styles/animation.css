@@ -1,0 +1,66 @@
+.hiddenRight{
+    opacity: 0;
+    transform: translateX(50px);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+  }
+.hiddenLeft{
+    opacity: 0;
+    transform: translateX(-50px);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+  }
+  .hiddenCardToLeft{
+    opacity: 0;
+    transform: translateX(-100px);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+  }
+.showToLeft{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+  .hiddenImage{
+    opacity: 0;
+    transform: translateY(-50px);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+  }
+  .hiddenContentFromTop{
+    opacity: 0;
+    transform: translateY(-50px);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+  }
+  .hiddenBtnToBottom{
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+  }
+.show__YContent{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  .HiddenToBottom{
+    opacity: 0;
+    transform: translateY(-20px);
+    filter: blur(5px);
+    transition: all 0.5s ease;
+    overflow: hidden;
+  }
+.fromBottom{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+
+@media (prefers-reduced-motion: reduce) {
+  .fromBottom,.hiddenRight,.hiddenLeft .hiddenCardToLeft,
+  .showToLeft , .hiddenImage,.show__YContent, .hiddenContentFromTop,
+  .hiddenBtnToBottom, .HiddenToBottom{
+      animation: none; 
+  }
+}
