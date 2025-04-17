@@ -91,7 +91,7 @@
     transition: color 0.3s;
 }
 .header__link:hover{
-    color: var(--color-rose);
+    color: var( --color-hover);
 }
 .header__line{
     border: 1px solid var(--color-slate600);

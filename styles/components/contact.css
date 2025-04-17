@@ -1,3 +1,7 @@
+#contact{
+    padding: 2rem 0;
+}
+
 .contact_form{
     margin-top: 30px;
 }
@@ -63,6 +67,9 @@
     display: flex;
     justify-content: flex-end;
 }
+.btn-wrap .contact_btn{
+    padding: 2rem 0;
+}
 
 form textarea{
     resize: none;
@@ -109,7 +116,7 @@ form textarea{
 }
 
 .contact__social a i:hover{
-    color: var(--color-rose);
+    color: var( --color-hover);
  }
 /* xs*/
 @media (max-width: 475px){
