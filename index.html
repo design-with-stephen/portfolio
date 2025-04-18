@@ -314,7 +314,7 @@
             </div>
           </div>
           <div class="project-content">
-            <div class="project-category graphic active">
+            <div  class="project-category graphic active">
               <div class="image_box overflowHidden">
                 <div class="card HiddenToBottom delay3">
                   <div class="project-image-wrap">
@@ -415,20 +415,23 @@
             <form method="post" action="" id="hireForm" name="form">
               <div class="input__fields">
                 <label class="contact__label" for="Name">Name</label>
-                <input type="text" class="contact__info_input" name="name" placeholder="Please enter your full name" required />
+                <input type="text" class="contact__info_input" id="name" placeholder="Please enter your full name" required />
               </div>
               <div class="input__fields">
-                <label class="contact__label" for="email">Eamil</label>
-                <input type="email" class="contact__info_input" name="email" placeholder="Please your email" required />
+                <label class="contact__label" for="email">Email</label>
+                <input type="email" class="contact__info_input" id="email" placeholder="Please your email" required />
               </div>
               <div class="input__fields">
                 <label class="contact__label" for="phone">Phone</label>
-                <input type="tel" class="contact__info_input" name="phone" placeholder="Please your phone number" required />
+                <input type="tel" class="contact__info_input" id="phone" placeholder="Please your phone number" required />
+              </div>
+              <div class="input__fields">
+                <label class="contact__label" for="subject">Phone</label>
+                <input type="text" class="contact__info_input" id="subject" placeholder="Please Subject" required />
               </div>
               <div class="input__fields">
                 <label class="contact__label" for="Message"> Message</label>
-                <textarea class="msg_input" name="message" id="" cols="30" rows="10" placeholder="type here..." required>
-                </textarea>
+                <textarea type="text" class="msg_input" id="message" id="" cols="30" rows="10" placeholder="type here..." required></textarea>
               </div>
               <div class="btn_wrap" id="btn_wrap">
                 <button type="submit" value="Submit" id="submit" class="btn contact_btn">Send</button>
@@ -452,11 +455,14 @@
     <!-- footer end-->
 
     <!-- scripts -->
+    
     <script src="scripts/main.js"></script>
     <script src="scripts/mobile_js.js"></script>
     <script src="scripts/about.js"></script>
     <script src="scripts/projects.js"></script>
     <script src="scripts/sheet.js"></script>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="scripts/emailjs.js"></script>
     <script>
       const loader = document.querySelector('.loader');
       const pageContent = document.querySelector('#body');
